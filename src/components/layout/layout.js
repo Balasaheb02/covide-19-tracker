@@ -26,6 +26,7 @@ const Layout = () => {
         {data.map((data, index) => {
           return (
             <Card
+              key={data.state}
               title={data.state}
               death={data.deaths}
               active={data.active}
