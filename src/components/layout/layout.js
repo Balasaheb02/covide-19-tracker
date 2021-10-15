@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./layout.css";
 import Card from "../../components/cards/card";
+import Heading from "../../components/heading/heading"
 
 const Layout = () => {
   const [data, setData] = useState([]);
@@ -21,7 +22,7 @@ const Layout = () => {
 
   return (
     <div className="main_content">
-      <h2>Covid 19 Tracker </h2>
+    <Heading title="Covid 19 Tracker"></Heading>
       <ul className="cards">
         {data.map((data, index) => {
           return (
